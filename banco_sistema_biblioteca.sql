@@ -10,3 +10,4 @@ create table livro(
 	autor varchar(50)
 );
 
+
