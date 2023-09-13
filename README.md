@@ -59,7 +59,8 @@ Para inserir um novo livro:
 
 ```sql
 INSERT INTO Livro (numero_registro, titulo, ano_publicacao, autor)
-VALUES (1, 'Nome do Livro', '2023', 'Nome do Autor');
+VALUES (1, 'Nome do Livro', '2023', 'Nome do Autor'),
+        (2, 'Nome do livro 2','2022','Nome do autor 1');
 ```
 
 ### Periódico
@@ -122,7 +123,10 @@ Para inserir um novo empréstimo de material especial:
 
 ```sql
 INSERT INTO Emprestimo_Material_Especial (id_emprestimo, cpf_usuario, numero_registro_material_especial, data_retirada, data_devolucao)
-VALUES (1, '12345678901', 1, '2023-01-01', '2023-01-15');
+VALUES (1, '12345678901', 1, '2023-01-01', '2023-01-15'),
+        (1, '12345678901', 1, '2023-01-01', '2023-01-15'),
+        (1, '12345678901', 1, '2023-01-01', '2023-01-15'),
+        (1, '12345678901', 1, '2023-01-01', '2023-01-15');
 ```
 
 ### Empréstimo de Evento
@@ -172,4 +176,9 @@ Para consultar todos os usuários cujo nome começa com "João":
 
 ```sql
 SELECT * FROM Usuario WHERE nome LIKE 'João%';
+```
+Deletar um registro
+```sql
+DELETE FROM Clientes
+WHERE ID = 123;
 ```
