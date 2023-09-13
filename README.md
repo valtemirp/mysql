@@ -182,3 +182,9 @@ Deletar um registro
 DELETE FROM Clientes
 WHERE ID = 123;
 ```
+
+Alterar tabela com registros
+```sql
+ALTER TABLE Cliente
+ADD cpf varchar(11) DEFAULT '0000000000000';
+```
