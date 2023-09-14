@@ -1,3 +1,6 @@
+-- Criando o banco de dados
+create database sistema_biblioteca;
+-- Usando o sistema biblioteca
 use sistema_biblioteca;
 -- Tabela que representa a biblioteca
 CREATE TABLE BIBLIOTECA (
