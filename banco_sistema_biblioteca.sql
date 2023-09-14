@@ -1,4 +1,0 @@
-
-
-
-[AdventureWorksLT2019]
