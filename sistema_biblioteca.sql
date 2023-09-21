@@ -17,6 +17,14 @@ CREATE TABLE LIVRO (
   -- Número de registro do livro é a chave primária
 );
 
+insert into livro(numero_registro,titulo,ano_publicacao,autor)
+values 
+(8,'Os Setes Maridos','2020','Taylor J.');
+
+
+select * from livro;
+
+select * from livro;
 -- Tabela que representa os funcionários
 CREATE TABLE FUNCIONARIO (
   matricula INT PRIMARY KEY,
@@ -32,6 +40,11 @@ CREATE TABLE LIVRO_BIBLIOTECA (
   FOREIGN KEY (numero_registro) REFERENCES LIVRO(numero_registro)
   -- Chaves estrangeiras para biblioteca e livro
 );
+select * from livro;
+select * from biblioteca;
+select * from LIVRO_BIBLIOTECA;
+
+
 
 -- Tabela que representa o bibliotecário
 CREATE TABLE BIBLIOTECARIO (
@@ -267,7 +280,7 @@ JOIN LIVRO_BIBLIOTECA LB ON B.cnpj = LB.cnpj
 JOIN LIVRO L ON LB.numero_registro = L.numero_registro
 GROUP BY B.cnpj, L.autor;
 
-
-
 select * from livro
 where titulo = 'o principe';
+
+
